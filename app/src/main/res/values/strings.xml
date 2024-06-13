@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GreetingsApp</string>
+    <string name="header_text">HAPPY2U</string>
+    <string name="share_button_name">Share</string>
+    <string name="msg_website">Visit https://happy2u.in for lovely greetings.</string>
+    <string name="editText_anv_text">Happy Anniversary 💖🎉🎊🎂❤️💕</string>
+    <string name="select_img">Scroll and tap the greeting, edit message and share</string>
+    <string name="select_event">Select the event for sending a greeting</string>
+    <string name="home_button_name">Home</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+    test
+    </string>
+</resources>

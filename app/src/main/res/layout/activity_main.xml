@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:id="@+id/main"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+    <!-- Animated TextView for "HAPPY2U" -->
+<!--    <TextView
+        android:id="@+id/tvHappy2U"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/saira_expanded_semibold"
+        android:textColor="#4747d1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />-->
+
+    <ImageView
+        android:id="@+id/imghdrhappy2u"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/imghdrhappy2u"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ImageView below the TextView -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/sample_img"
+        android:layout_below="@id/imghdrhappy2u"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/sample_img"
+        android:layout_below="@id/image1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/sample_img"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/sample_img"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+<!--    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/sample_img"
+        android:layout_below="@id/imageView3"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>-->
+
+</RelativeLayout>

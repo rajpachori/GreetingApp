@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GreetingAnniversary"
+    android:background="@color/white">  <!-- Background image -->
+
+    <!-- Back Button on the top-left corner -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textSize="16sp"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/saira_expanded_semibold"
+        android:background="@drawable/rectangle_button"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ScrollView for the images -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_button"
+        android:layout_above="@id/editText"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- TextView for instruction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_img"
+                android:textSize="18sp"
+                android:fontFamily="@font/saira_expanded_semibold"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Define 10 ImageViews -->
+            <ImageView android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv3"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv5"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image6"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv6"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image7"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv7"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image8"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv8"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image9"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv9"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+            <ImageView android:id="@+id/image10"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:src="@drawable/img_anv10"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- EditText control -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/share_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:fontFamily="@font/saira_expanded_regular"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:text="@string/editText_anv_text"/>
+
+    <!-- Always visible Share Button at the bottom -->
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:textSize="22sp"
+        android:fontFamily="@font/saira_expanded_semibold"
+        android:background="@drawable/rectangle_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>
